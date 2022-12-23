@@ -1,0 +1,51 @@
+1- alfabeto completo                                         alfabeto{¬,^}
+¬G                                                                ¬G
+G ^ H                                                            G ^ H   
+G v H                                                         ¬(¬G ^ ¬H)
+G → H                                                          ¬(G ^ ¬H)
+G ↔ H                                                  (¬(G ^ ¬H)) ^ (¬(¬G ^ H))
+
+alfabeto completo                                            alfabeto{¬,v}
+¬G                                                             ¬G
+G ^ H                                                        ¬(¬G v ¬H) 
+G v H                                                           G v H
+G → H                                                          ¬G v H
+G ↔ H                                                      ¬(¬(¬G v H)v ¬(¬H v G))
+
+alfabeto completo                                            alfabeto{nand}
+¬G                                                               G nand G
+G ^ H                                                   (G nand H) nand (G nand H)
+G v H                                                   (G nand G) nand (H nand H)
+G → H                                                         G nand (H nand H)
+G ↔ H             (((G nand (H nand H)) nand ((H nand (G nand G))) nand (((G nand (H nand H)) nand ((H nand (G nand H)))      
+
+alfabeto completo                                           alfabeto{nor}
+¬G                                                                 G nor G
+G ^ H                                                      (G nor G) nor (H nor H)
+G v H                                                      (G nor H) nor (G nor H)
+G → H                                              ((G nor G) nor H) nor ((G nor G) nor H)
+G ↔ H                                              ((G nor G) nor H) nor ((H nor H) nor G)
+
+
+
+
+2- E = (P ↔ Q) v (R → S)
+
+   G = ¬(¬(¬P v Q) v ¬(¬(Q v P))) v (¬P v H)
+   
+   E ≡ H
+   
+   
+   
+   
+3- H = P ^ (R → S)
+   
+   G = (P nand((R nand(S nand S))) nand (P nand((R nand(S nand S)))
+   
+   H ≡ G
+   
+   
+   
+4- Não é possível representar (¬P) apenas com v e P.
+
+   É possível representar (P v Q) usando →,P e Q.  (P → Q) → Q
