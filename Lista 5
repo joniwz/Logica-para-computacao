@@ -1,0 +1,93 @@
+1-a) (Ɐx)(ⱻy) g(y,x)
+  b) (Ɐx)(ⱻy)(ⱻz) (f(y,x) ^ g(z,x))
+  c) (Ɐx)(ⱻy)(ⱻz) (g(y,x) → f(z,x))
+  d) (ⱻx)(ⱻy) (f(x,y) ^ f(e,x))
+  e) (Ɐx)(Ɐy)(Ɐz) ((b(x,y) ^ f(y,z)) → (¬s(x,y) ^ f(y,z)))
+  f) (Ɐx)(Ɐy)(ⱻz)(ⱻw) (¬(g(x,z) ^ g(z,w)) → f(y,w))
+  g) h(e,p)
+  h) (ⱻx) (b(c,x) ^ h(m,x))
+  
+2-a) D:{brasileiros}
+     p:{x eh tecnico da seleçao}
+       
+     (Ɐx)p(x)
+       
+  b) D:{seres humanos}
+     b:{x é brasileiro}
+     f:{x é finlandense}
+     n:{x viu a neve}
+       
+       (ⱻx)(Ɐy) ((b(x) ^ n(x)) ^ ¬(f(y) ^ ¬n(y)) 
+       
+  c) D:{seres humanos}
+     n:{x é do hemisfério norte}
+     s:{x é do hemisfério sul}
+       
+     (Ɐx) ((n(x) ^ ¬s(x)) v (¬n(x) ^ s(x)))
+       
+  d) D:{seres humanos}
+     l:{x mora na lua}
+       
+     (ⱻx)l(x)
+       
+  e) D:{seres humanos}
+     a:{x arrisca}
+     p:{x petisca}
+       
+     (Ɐx) ((¬a(x) → ¬p(x))
+       
+3-a) Todo número natural é par.
+  b) Para todo número natural existe um sucessor natural.
+  c) Dois números naturais se somados resultam em outro número natural.
+  d) Para todo numéro natural, ele e seu sucessor são pares.
+  e) Todo número natural existe outro número natural que é o seu dobro.
+  f) Todo número natural que é o dobro de outro número natural é par.
+  
+4-a)       
+5-a) Alguém dos estudantes da minha escola visitou Dakota do Norte.
+  b) Todos os estudantes da minha escola visitaram Dakota do Norte.
+  c) Nenhum estudante da minha escola visitou Dakota do Norte.
+  d) Algum estudante da minha escola não visitou Dakota do Norte.
+  e) Nenhum estudante da minha escola visitou Dakota do Norte.
+  f) Nenhum estudante da minha escola visitou Dakota do Norte.
+  
+6-a) Todas as pessoas que são comediantes, são divertidos.
+  b) Todos as pessoas são comediantes e divertidos.
+  c) Existe uma pessoa que é comediante, então ela é divertida.
+  d) Existe uma pessoa que é comediante e divertida.
+  
+7-a) true
+  b) true
+  c) false
+  d) false
+  e) true
+  f) false
+  
+8- Considerando os quantificadores uma fórmula H é válida quando para todoa interpretação I, a I[H] = T.
+   Para provar que uma fórmula H é válida, basta fazer uma prova por absurdo, isto é, tenta-se provar que existe uma I[H] = F.
+   Caso chegue a um absurdo a fóruma é válida. Seja uma interprtetação I sobre o domínio U, tal que I[H] = F:
+     
+  a) I[G] = F
+     I[(Ɐy)p(y) → (Ɐx)p(x)] = F
+     I[(Ɐy)p(y) = T e (Ɐx)p(x)] = F
+     Ɐd ∈ U, <y <- d>, I[(Ɐy)p(y) = T e ⱻs ∈ U, <x <- s>, I[(Ɐx)p(x) = F ???
+     
+     Absurdo! Logo G é válida!
+     
+  b) I[G] = F
+     I[(ⱻx)p(x) → p(x)] = F
+     I[(ⱻx)p(x) = T e I[p(x)] = F
+     ⱻd ∈ U, <x <- d>, I[(ⱻx)p(x)] = T e 
+     
+  c) I[G] = F   
+     I[p(x) → (ⱻx)p(x)] = F   
+     I[p(x) = T e I[(ⱻx)p(x)] = F
+     
+
+
+
+
+
+
+
+
